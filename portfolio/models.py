@@ -13,3 +13,10 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Test(models.Model):
+    name = models.CharField('Name', max_length=255)
+    price = models.PositiveIntegerField('Price')
+    active = models.BooleanField('Active')
+    
